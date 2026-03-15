@@ -47,37 +47,73 @@ Example:
 
 This preserves testability and allows swapping backend providers.
 
-## Proposed Flutter structure
+## Implemented Flutter structure
 
 ```text
 terme_flutter/lib/
+  main.dart
   app/
     app.dart
-    router.dart
     di/
-      providers.dart
+      dependency_container.dart
   core/
-    constants/
     theme/
+      terminal_theme.dart
     widgets/
+      terminal_panel.dart
   features/
     auth/
       domain/
+        entities/
+          account.dart
+    chat/
       data/
-      presentation/
-    contacts/
+        repositories/
+          in_memory_message_repository.dart
       domain/
-      data/
+        entities/
+          terminal_message.dart
+        repositories/
+          message_repository.dart
+        use_cases/
+          send_message_use_case.dart
       presentation/
-    messaging/
+        screens/
+          chat_screen.dart
+    friends/
+      data/
+        repositories/
+          in_memory_friend_repository.dart
       domain/
-      data/
+        entities/
+          friend_user.dart
+        repositories/
+          friend_repository.dart
+        use_cases/
+          search_users_use_case.dart
+          send_invite_use_case.dart
       presentation/
+        screens/
+          friends_screen.dart
     stats/
       domain/
+        entities/
+          chat_stats.dart
+        repositories/
+          stats_repository.dart
       data/
+        repositories/
+          in_memory_stats_repository.dart
       presentation/
+        screens/
+          stats_screen.dart
 ```
+
+### Folder naming conventions
+
+- `domain/use_cases` contains business actions (pure logic orchestration)
+- `data/repositories` contains concrete implementations of domain contracts
+- `presentation/screens` contains route-level UI screens
 
 ## State management
 

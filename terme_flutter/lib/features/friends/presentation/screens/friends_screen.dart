@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:terme_flutter/core/widgets/terminal_panel.dart';
 import 'package:terme_flutter/features/friends/domain/entities/friend_user.dart';
-import 'package:terme_flutter/features/friends/domain/usecases/search_users_use_case.dart';
-import 'package:terme_flutter/features/friends/domain/usecases/send_invite_use_case.dart';
+import 'package:terme_flutter/features/friends/domain/use_cases/search_users_use_case.dart';
+import 'package:terme_flutter/features/friends/domain/use_cases/send_invite_use_case.dart';
 
 class FriendsScreen extends StatefulWidget {
   const FriendsScreen({

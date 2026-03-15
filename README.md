@@ -21,6 +21,9 @@ Core user promise:
 - `docs/SETUP.md` - local development setup instructions
 - `terme_flutter/` - Flutter starter skeleton
 
+Flutter code is organized with explicit folder separation:
+`presentation/screens`, `domain/use_cases`, and `data/repositories` per feature.
+
 ## Stack (recommended)
 
 - Flutter (Dart) for shared iOS + Android client

@@ -22,3 +22,27 @@ flutter run
 - In-memory repository stubs for local iteration
 
 Replace stubs with Supabase-backed repositories in next iteration.
+
+## Folder structure
+
+```text
+lib/
+  app/
+    di/
+  core/
+    theme/
+    widgets/
+  features/
+    <feature_name>/
+      domain/
+        entities/
+        repositories/
+        use_cases/
+      data/
+        repositories/
+      presentation/
+        screens/
+```
+
+This separation keeps UI, business logic, and data implementations isolated and
+supports dependency inversion cleanly.

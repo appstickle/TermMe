@@ -1,11 +1,11 @@
-import 'package:terme_flutter/features/chat/data/in_memory_message_repository.dart';
+import 'package:terme_flutter/features/chat/data/repositories/in_memory_message_repository.dart';
 import 'package:terme_flutter/features/chat/domain/repositories/message_repository.dart';
-import 'package:terme_flutter/features/chat/domain/usecases/send_message_use_case.dart';
-import 'package:terme_flutter/features/friends/data/in_memory_friend_repository.dart';
+import 'package:terme_flutter/features/chat/domain/use_cases/send_message_use_case.dart';
+import 'package:terme_flutter/features/friends/data/repositories/in_memory_friend_repository.dart';
 import 'package:terme_flutter/features/friends/domain/repositories/friend_repository.dart';
-import 'package:terme_flutter/features/friends/domain/usecases/search_users_use_case.dart';
-import 'package:terme_flutter/features/friends/domain/usecases/send_invite_use_case.dart';
-import 'package:terme_flutter/features/stats/data/in_memory_stats_repository.dart';
+import 'package:terme_flutter/features/friends/domain/use_cases/search_users_use_case.dart';
+import 'package:terme_flutter/features/friends/domain/use_cases/send_invite_use_case.dart';
+import 'package:terme_flutter/features/stats/data/repositories/in_memory_stats_repository.dart';
 import 'package:terme_flutter/features/stats/domain/repositories/stats_repository.dart';
 
 class DependencyContainer {

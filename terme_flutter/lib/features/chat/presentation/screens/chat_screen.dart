@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:terme_flutter/core/theme/terminal_theme.dart';
 import 'package:terme_flutter/core/widgets/terminal_panel.dart';
-import 'package:terme_flutter/features/chat/domain/usecases/send_message_use_case.dart';
+import 'package:terme_flutter/features/chat/domain/use_cases/send_message_use_case.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:terme_flutter/app/di/dependency_container.dart';
 import 'package:terme_flutter/core/theme/terminal_theme.dart';
-import 'package:terme_flutter/features/chat/presentation/chat_screen.dart';
-import 'package:terme_flutter/features/friends/presentation/friends_screen.dart';
-import 'package:terme_flutter/features/stats/presentation/stats_screen.dart';
+import 'package:terme_flutter/features/chat/presentation/screens/chat_screen.dart';
+import 'package:terme_flutter/features/friends/presentation/screens/friends_screen.dart';
+import 'package:terme_flutter/features/stats/presentation/screens/stats_screen.dart';
 
 class TerMeApp extends StatefulWidget {
   const TerMeApp({super.key});
